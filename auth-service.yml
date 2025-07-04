@@ -1,5 +1,9 @@
 server:
   port: 9003 
+
+greeting:
+  message: "Hello from auth-service config!"
+  
 management:
   endpoints:
     web:
