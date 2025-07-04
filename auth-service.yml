@@ -9,7 +9,7 @@ management:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/auth_service_db
+    url: jdbc:postgresql://localhost:5432/{db_name}
     username: {{ db_username }}
     password: {{ db_password }}
     driver-class-name: org.postgresql.Driver
