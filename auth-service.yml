@@ -9,9 +9,9 @@ management:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/{db_name}
-    username: {{ db_username }}
-    password: {{ db_password }}
+    url: jdbc:postgresql://localhost:5432/auth_service_db
+    username: mrlii
+    password: postgresdev
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
