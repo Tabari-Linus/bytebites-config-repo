@@ -7,6 +7,23 @@ management:
       exposure:
         include: health, info, beans
 
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth_service_db
+    username: {{ db_username }}
+    password: {{ db_password }}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    enabled: true
+
+
+jwt:
+  secret: "18A2B3D4F5971C5E7F2A6D9B0C8E1A4F28B5E6D7G8H9J0K1L2M3N4P5Q6R7"
+
 eureka:
   instance:
     prefer-ip-address: true
