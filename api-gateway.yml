@@ -18,3 +18,6 @@ spring:
             - Path=/auth/**
           filters:
             - StripPrefix=1
+
+jwt:
+  secret: "18A2B3D4F5971C5E7F2A6D9B0C8E1A4F28B5E6D7G8H9J0K1L2M3N4P5Q6R7"
