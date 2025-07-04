@@ -14,6 +14,3 @@ spring:
           uri: lb://auth-service
           predicates:
             - Path=/auth/**
-      discovery:
-        locator:
-          enabled: true
