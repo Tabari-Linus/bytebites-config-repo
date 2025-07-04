@@ -9,13 +9,11 @@ eureka:
 spring:
   cloud:
     gateway:
-      server:
-        webflux:
-          discovery:
-            locator:
-              enabled: true
-          routes:
-            - id: auth-service-route
-              uri: lb://auth-service 
-              predicates:
-                - Path=/auth/**
+      routes:
+        - id: auth-service-route
+          uri: lb://auth-service
+          predicates:
+            - Path=/auth/**
+      discovery:
+        locator:
+          enabled: true
