@@ -3,7 +3,9 @@ server:
 
 eureka:
     instance:
-        prefer-ip-address: true
+      prefer-ip-address: true
+
+
 #  client:
 #    service-url:
 #      defaultZone: http://localhost:8761/eureka/
@@ -11,8 +13,9 @@ eureka:
 spring:
   cloud:
     gateway:
+      server:
       routes:
         - id: auth-service-route
           uri: lb://auth-service
-          predicates:
-            - Path=/auth/**
+        - predicates:
+          - Path=/auth/**
