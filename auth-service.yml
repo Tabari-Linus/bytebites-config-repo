@@ -19,6 +19,8 @@ spring:
     show-sql: true
   flyway:
     enabled: true
+    database:
+      override: PostgreSQL
 
 
 jwt:
