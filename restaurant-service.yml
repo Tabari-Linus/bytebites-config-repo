@@ -1,5 +1,5 @@
 server:
-  port: 9002 # A port for this service
+  port: 9002
 
 spring:
   application:
@@ -18,6 +18,8 @@ spring:
 
 
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
